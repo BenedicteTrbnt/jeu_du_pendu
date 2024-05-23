@@ -44,7 +44,6 @@ def unifier(b):
 #fonction du jeu du pendu, la fonction retourne la variable rejouer
 def pendu():
     mot_aleatoire = choisir_mot(words)
-    #print(mot_aleatoire)
     mot=unifier(mot_aleatoire)
     mot_longueur = len(mot)
     mot_a_deviner = '_' * mot_longueur
@@ -107,7 +106,6 @@ def pendu():
 
 # boucle tant que rejouer=='oui' alors le jeu du pendu est relancé.
 while rejouer=='oui':
-    mot_aleatoire = choisir_mot(words)
     pendu()
     if not rejouer=='oui':
         exit()
